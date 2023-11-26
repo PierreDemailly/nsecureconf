@@ -1,0 +1,1093 @@
+{
+  "id": "vXKVdI",
+  "rootDependencyName": "@topcli/prompts",
+  "scannerVersion": "4.0.0",
+  "vulnerabilityStrategy": "none",
+  "warnings": [],
+  "dependencies": {
+    "@topcli/wcwidth": {
+      "versions": {
+        "1.0.1": {
+          "id": 1,
+          "usedBy": {
+            "@topcli/prompts": "1.5.1"
+          },
+          "isDevDependency": false,
+          "existOnRemoteRegistry": true,
+          "flags": [
+            "hasManyPublishers"
+          ],
+          "description": "Port of C's wcwidth() and wcswidth()",
+          "size": 13079,
+          "author": {
+            "name": "GENTILHOMME Thomas",
+            "email": "gentilhomme.thomas@gmail.com"
+          },
+          "engines": {
+            "node": ">=14"
+          },
+          "repository": {
+            "type": "git",
+            "url": "git+https://github.com/topcli/wcwidth.git"
+          },
+          "scripts": {
+            "test": "cross-env esm-tape-runner 'test/**/*.js' | tap-monkey",
+            "coverage": "c8 -r html npm test",
+            "lint": "cross-env eslint index.js",
+            "prepublishOnly": "pkg-ok"
+          },
+          "warnings": [],
+          "composition": {
+            "extensions": [
+              "",
+              ".js",
+              ".md",
+              ".json",
+              ".ts"
+            ],
+            "files": [
+              "LICENSE",
+              "README.md",
+              "index.d.ts",
+              "index.js",
+              "package.json",
+              "src/combining.js"
+            ],
+            "minified": [],
+            "unused": [],
+            "missing": [],
+            "alias": {},
+            "required_files": [
+              "src/combining.js"
+            ],
+            "required_nodejs": [],
+            "required_thirdparty": [],
+            "required_subpath": {}
+          },
+          "license": {
+            "uniqueLicenseIds": [
+              "MIT"
+            ],
+            "hasMultipleLicenses": false,
+            "licenses": [
+              {
+                "uniqueLicenseIds": [
+                  "MIT"
+                ],
+                "spdxLicenseLinks": [
+                  "https://spdx.org/licenses/MIT.html#licenseText"
+                ],
+                "spdx": {
+                  "osi": true,
+                  "fsf": true,
+                  "fsfAndOsi": true,
+                  "includesDeprecated": false
+                },
+                "from": "package.json"
+              }
+            ]
+          },
+          "gitUrl": null
+        }
+      },
+      "vulnerabilities": [],
+      "metadata": {
+        "dependencyCount": 0,
+        "publishedCount": 2,
+        "lastUpdateAt": "2022-12-20T17:12:03.063Z",
+        "lastVersion": "1.0.1",
+        "hasManyPublishers": true,
+        "hasReceivedUpdateInOneYear": true,
+        "homepage": "https://github.com/topcli/wcwidth#readme",
+        "author": {
+          "name": "GENTILHOMME Thomas",
+          "email": "gentilhomme.thomas@gmail.com"
+        },
+        "publishers": [
+          {
+            "name": "fraxken",
+            "email": "gentilhomme.thomas@gmail.com",
+            "version": "1.0.1",
+            "at": "2022-12-20T17:12:03.063Z"
+          }
+        ],
+        "maintainers": [
+          {
+            "name": "pierred",
+            "email": "pierredemailly.pro@gmail.com"
+          },
+          {
+            "name": "fraxken",
+            "email": "gentilhomme.thomas@gmail.com",
+            "at": "2022-12-20T17:12:03.063Z",
+            "version": "1.0.1"
+          }
+        ]
+      }
+    },
+    "kleur": {
+      "versions": {
+        "4.1.5": {
+          "id": 2,
+          "usedBy": {
+            "@topcli/prompts": "1.5.1"
+          },
+          "isDevDependency": false,
+          "existOnRemoteRegistry": true,
+          "flags": [
+            "hasManyPublishers"
+          ],
+          "description": "The fastest Node.js library for formatting terminal text with ANSI colors~!",
+          "size": 20602,
+          "author": {
+            "name": "Luke Edwards",
+            "email": "luke.edwards05@gmail.com",
+            "url": "https://lukeed.com"
+          },
+          "engines": {
+            "node": ">=6"
+          },
+          "repository": "lukeed/kleur",
+          "scripts": {
+            "build": "node build",
+            "test": "uvu -r esm -i utils -i xyz"
+          },
+          "warnings": [],
+          "composition": {
+            "extensions": [
+              "",
+              ".js",
+              ".mjs",
+              ".md",
+              ".json",
+              ".ts"
+            ],
+            "files": [
+              "colors.d.ts",
+              "colors.js",
+              "colors.mjs",
+              "index.d.ts",
+              "index.js",
+              "index.mjs",
+              "license",
+              "package.json",
+              "readme.md"
+            ],
+            "minified": [],
+            "unused": [],
+            "missing": [],
+            "alias": {},
+            "required_files": [],
+            "required_nodejs": [],
+            "required_thirdparty": [],
+            "required_subpath": {}
+          },
+          "license": {
+            "uniqueLicenseIds": [
+              "MIT"
+            ],
+            "hasMultipleLicenses": false,
+            "licenses": [
+              {
+                "uniqueLicenseIds": [
+                  "MIT"
+                ],
+                "spdxLicenseLinks": [
+                  "https://spdx.org/licenses/MIT.html#licenseText"
+                ],
+                "spdx": {
+                  "osi": true,
+                  "fsf": true,
+                  "fsfAndOsi": true,
+                  "includesDeprecated": false
+                },
+                "from": "package.json"
+              },
+              {
+                "uniqueLicenseIds": [
+                  "MIT"
+                ],
+                "spdxLicenseLinks": [
+                  "https://spdx.org/licenses/MIT.html#licenseText"
+                ],
+                "spdx": {
+                  "osi": true,
+                  "fsf": true,
+                  "fsfAndOsi": true,
+                  "includesDeprecated": false
+                },
+                "from": "license"
+              }
+            ]
+          },
+          "gitUrl": null
+        }
+      },
+      "vulnerabilities": [],
+      "metadata": {
+        "dependencyCount": 0,
+        "publishedCount": 21,
+        "lastUpdateAt": "2022-06-26T18:50:12.559Z",
+        "lastVersion": "4.1.5",
+        "hasManyPublishers": true,
+        "hasReceivedUpdateInOneYear": false,
+        "homepage": "https://github.com/lukeed/kleur#readme",
+        "author": {
+          "name": "Luke Edwards",
+          "email": "luke.edwards05@gmail.com",
+          "url": "https://lukeed.com"
+        },
+        "publishers": [
+          {
+            "name": "lukeed",
+            "email": "luke@lukeed.com",
+            "version": "4.1.5",
+            "at": "2022-06-26T18:50:12.559Z"
+          }
+        ],
+        "maintainers": [
+          {
+            "name": "lukeed",
+            "email": "luke@lukeed.com",
+            "at": "2022-06-26T18:50:12.559Z",
+            "version": "4.1.5"
+          }
+        ]
+      }
+    },
+    "is-unicode-supported": {
+      "versions": {
+        "2.0.0": {
+          "id": 3,
+          "usedBy": {
+            "@topcli/prompts": "1.5.1"
+          },
+          "isDevDependency": false,
+          "existOnRemoteRegistry": true,
+          "flags": [
+            "hasManyPublishers"
+          ],
+          "description": "Detect whether the terminal supports Unicode",
+          "size": 4124,
+          "author": {
+            "name": "Sindre Sorhus",
+            "email": "sindresorhus@gmail.com",
+            "url": "https://sindresorhus.com"
+          },
+          "engines": {
+            "node": ">=18"
+          },
+          "repository": "sindresorhus/is-unicode-supported",
+          "scripts": {
+            "test": "xo && ava && tsd"
+          },
+          "warnings": [],
+          "composition": {
+            "extensions": [
+              "",
+              ".js",
+              ".md",
+              ".json",
+              ".ts"
+            ],
+            "files": [
+              "index.d.ts",
+              "index.js",
+              "license",
+              "package.json",
+              "readme.md"
+            ],
+            "minified": [],
+            "unused": [],
+            "missing": [],
+            "alias": {},
+            "required_files": [],
+            "required_nodejs": [
+              "node:process"
+            ],
+            "required_thirdparty": [],
+            "required_subpath": {}
+          },
+          "license": {
+            "uniqueLicenseIds": [
+              "MIT"
+            ],
+            "hasMultipleLicenses": false,
+            "licenses": [
+              {
+                "uniqueLicenseIds": [
+                  "MIT"
+                ],
+                "spdxLicenseLinks": [
+                  "https://spdx.org/licenses/MIT.html#licenseText"
+                ],
+                "spdx": {
+                  "osi": true,
+                  "fsf": true,
+                  "fsfAndOsi": true,
+                  "includesDeprecated": false
+                },
+                "from": "package.json"
+              },
+              {
+                "uniqueLicenseIds": [
+                  "MIT"
+                ],
+                "spdxLicenseLinks": [
+                  "https://spdx.org/licenses/MIT.html#licenseText"
+                ],
+                "spdx": {
+                  "osi": true,
+                  "fsf": true,
+                  "fsfAndOsi": true,
+                  "includesDeprecated": false
+                },
+                "from": "license"
+              }
+            ]
+          },
+          "gitUrl": null
+        }
+      },
+      "vulnerabilities": [],
+      "metadata": {
+        "dependencyCount": 0,
+        "publishedCount": 6,
+        "lastUpdateAt": "2023-10-29T14:02:54.928Z",
+        "lastVersion": "2.0.0",
+        "hasManyPublishers": true,
+        "hasReceivedUpdateInOneYear": true,
+        "homepage": "https://github.com/sindresorhus/is-unicode-supported#readme",
+        "author": {
+          "name": "Sindre Sorhus",
+          "email": "sindresorhus@gmail.com",
+          "url": "https://sindresorhus.com"
+        },
+        "publishers": [
+          {
+            "name": "sindresorhus",
+            "email": "sindresorhus@gmail.com",
+            "version": "2.0.0",
+            "at": "2023-10-29T14:02:54.928Z"
+          }
+        ],
+        "maintainers": [
+          {
+            "name": "sindresorhus",
+            "email": "sindresorhus@gmail.com",
+            "at": "2023-10-29T14:02:54.928Z",
+            "version": "2.0.0"
+          }
+        ]
+      }
+    },
+    "ci-info": {
+      "versions": {
+        "3.9.0": {
+          "id": 4,
+          "usedBy": {
+            "is-ci": "3.0.1"
+          },
+          "isDevDependency": false,
+          "existOnRemoteRegistry": true,
+          "flags": [
+            "isOutdated",
+            "hasManyPublishers"
+          ],
+          "description": "Get details about the current Continuous Integration environment",
+          "size": 26349,
+          "author": {
+            "name": "Thomas Watson Steen",
+            "email": "w@tson.dk",
+            "url": "https://twitter.com/wa7son"
+          },
+          "engines": {
+            "node": ">=8"
+          },
+          "repository": "https://github.com/watson/ci-info.git",
+          "scripts": {
+            "lint:fix": "standard --fix",
+            "test": "standard && node test.js",
+            "prepare": "husky install"
+          },
+          "warnings": [],
+          "composition": {
+            "extensions": [
+              ".json",
+              "",
+              ".md",
+              ".js",
+              ".ts"
+            ],
+            "files": [
+              "CHANGELOG.md",
+              "LICENSE",
+              "README.md",
+              "index.d.ts",
+              "index.js",
+              "package.json",
+              "vendors.json"
+            ],
+            "minified": [],
+            "unused": [],
+            "missing": [],
+            "alias": {},
+            "required_files": [
+              "vendors.json"
+            ],
+            "required_nodejs": [],
+            "required_thirdparty": [],
+            "required_subpath": {}
+          },
+          "license": {
+            "uniqueLicenseIds": [
+              "MIT"
+            ],
+            "hasMultipleLicenses": false,
+            "licenses": [
+              {
+                "uniqueLicenseIds": [
+                  "MIT"
+                ],
+                "spdxLicenseLinks": [
+                  "https://spdx.org/licenses/MIT.html#licenseText"
+                ],
+                "spdx": {
+                  "osi": true,
+                  "fsf": true,
+                  "fsfAndOsi": true,
+                  "includesDeprecated": false
+                },
+                "from": "package.json"
+              },
+              {
+                "uniqueLicenseIds": [
+                  "MIT"
+                ],
+                "spdxLicenseLinks": [
+                  "https://spdx.org/licenses/MIT.html#licenseText"
+                ],
+                "spdx": {
+                  "osi": true,
+                  "fsf": true,
+                  "fsfAndOsi": true,
+                  "includesDeprecated": false
+                },
+                "from": "LICENSE"
+              }
+            ]
+          },
+          "gitUrl": null
+        }
+      },
+      "vulnerabilities": [],
+      "metadata": {
+        "dependencyCount": 0,
+        "publishedCount": 31,
+        "lastUpdateAt": "2023-10-29T06:41:23.336Z",
+        "lastVersion": "4.0.0",
+        "hasManyPublishers": true,
+        "hasReceivedUpdateInOneYear": true,
+        "homepage": "https://github.com/watson/ci-info",
+        "author": {
+          "name": "Thomas Watson Steen",
+          "email": "w@tson.dk",
+          "url": "https://twitter.com/wa7son"
+        },
+        "publishers": [
+          {
+            "name": "sibiraj-s",
+            "email": "kap9xb3d5@mozmail.com",
+            "version": "4.0.0",
+            "at": "2023-10-29T06:41:23.336Z"
+          },
+          {
+            "name": "watson",
+            "email": "w@tson.dk",
+            "version": "2.0.0",
+            "at": "2018-12-05T21:18:28.926Z"
+          }
+        ],
+        "maintainers": [
+          {
+            "name": "watson",
+            "email": "w@tson.dk",
+            "at": "2018-12-05T21:18:28.926Z",
+            "version": "2.0.0"
+          },
+          {
+            "name": "sibiraj-s",
+            "email": "kap9xb3d5@mozmail.com",
+            "at": "2023-10-29T06:41:23.336Z",
+            "version": "4.0.0"
+          }
+        ]
+      }
+    },
+    "is-ci": {
+      "versions": {
+        "3.0.1": {
+          "id": 5,
+          "usedBy": {
+            "@topcli/prompts": "1.5.1"
+          },
+          "isDevDependency": false,
+          "existOnRemoteRegistry": true,
+          "flags": [
+            "hasDependencies",
+            "hasOutdatedDependency",
+            "isDead",
+            "hasManyPublishers"
+          ],
+          "description": "Detect if the current environment is a CI server",
+          "size": 4063,
+          "author": {
+            "name": "Thomas Watson Steen",
+            "email": "w@tson.dk",
+            "url": "https://twitter.com/wa7son"
+          },
+          "engines": {},
+          "repository": {
+            "type": "git",
+            "url": "https://github.com/watson/is-ci.git"
+          },
+          "scripts": {
+            "test": "standard && node test.js"
+          },
+          "warnings": [],
+          "composition": {
+            "extensions": [
+              "",
+              ".md",
+              ".js",
+              ".json"
+            ],
+            "files": [
+              "CHANGELOG.md",
+              "LICENSE",
+              "README.md",
+              "bin.js",
+              "index.js",
+              "package.json"
+            ],
+            "minified": [],
+            "unused": [],
+            "missing": [],
+            "alias": {},
+            "required_files": [
+              "index.js"
+            ],
+            "required_nodejs": [],
+            "required_thirdparty": [
+              "ci-info"
+            ],
+            "required_subpath": {}
+          },
+          "license": {
+            "uniqueLicenseIds": [
+              "MIT"
+            ],
+            "hasMultipleLicenses": false,
+            "licenses": [
+              {
+                "uniqueLicenseIds": [
+                  "MIT"
+                ],
+                "spdxLicenseLinks": [
+                  "https://spdx.org/licenses/MIT.html#licenseText"
+                ],
+                "spdx": {
+                  "osi": true,
+                  "fsf": true,
+                  "fsfAndOsi": true,
+                  "includesDeprecated": false
+                },
+                "from": "package.json"
+              },
+              {
+                "uniqueLicenseIds": [
+                  "MIT"
+                ],
+                "spdxLicenseLinks": [
+                  "https://spdx.org/licenses/MIT.html#licenseText"
+                ],
+                "spdx": {
+                  "osi": true,
+                  "fsf": true,
+                  "fsfAndOsi": true,
+                  "includesDeprecated": false
+                },
+                "from": "LICENSE"
+              }
+            ]
+          },
+          "gitUrl": null
+        }
+      },
+      "vulnerabilities": [],
+      "metadata": {
+        "dependencyCount": 1,
+        "publishedCount": 17,
+        "lastUpdateAt": "2021-10-26T04:02:03.835Z",
+        "lastVersion": "3.0.1",
+        "hasManyPublishers": true,
+        "hasReceivedUpdateInOneYear": false,
+        "homepage": "https://github.com/watson/is-ci",
+        "author": {
+          "name": "Thomas Watson Steen",
+          "email": "w@tson.dk",
+          "url": "https://twitter.com/wa7son"
+        },
+        "publishers": [
+          {
+            "name": "sibiraj-s",
+            "email": "sibiraj_s@live.com",
+            "version": "3.0.1",
+            "at": "2021-10-26T04:02:03.835Z"
+          },
+          {
+            "name": "watson",
+            "email": "w@tson.dk",
+            "version": "2.0.0",
+            "at": "2018-12-05T21:49:50.810Z"
+          }
+        ],
+        "maintainers": [
+          {
+            "name": "watson",
+            "email": "w@tson.dk",
+            "at": "2018-12-05T21:49:50.810Z",
+            "version": "2.0.0"
+          },
+          {
+            "name": "sibiraj-s",
+            "email": "sibiraj_s@live.com",
+            "at": "2021-10-26T04:02:03.835Z",
+            "version": "3.0.1"
+          }
+        ]
+      }
+    },
+    "ansi-regex": {
+      "versions": {
+        "6.0.1": {
+          "id": 6,
+          "usedBy": {
+            "strip-ansi": "7.1.0"
+          },
+          "isDevDependency": false,
+          "existOnRemoteRegistry": true,
+          "flags": [
+            "hasManyPublishers"
+          ],
+          "description": "Regular expression for matching ANSI escape codes",
+          "size": 5891,
+          "author": {
+            "name": "Sindre Sorhus",
+            "email": "sindresorhus@gmail.com",
+            "url": "https://sindresorhus.com"
+          },
+          "engines": {
+            "node": ">=12"
+          },
+          "repository": "chalk/ansi-regex",
+          "scripts": {
+            "test": "xo && ava && tsd",
+            "view-supported": "node fixtures/view-codes.js"
+          },
+          "warnings": [],
+          "composition": {
+            "extensions": [
+              "",
+              ".js",
+              ".md",
+              ".json",
+              ".ts"
+            ],
+            "files": [
+              "index.d.ts",
+              "index.js",
+              "license",
+              "package.json",
+              "readme.md"
+            ],
+            "minified": [],
+            "unused": [],
+            "missing": [],
+            "alias": {},
+            "required_files": [],
+            "required_nodejs": [],
+            "required_thirdparty": [],
+            "required_subpath": {}
+          },
+          "license": {
+            "uniqueLicenseIds": [
+              "MIT"
+            ],
+            "hasMultipleLicenses": false,
+            "licenses": [
+              {
+                "uniqueLicenseIds": [
+                  "MIT"
+                ],
+                "spdxLicenseLinks": [
+                  "https://spdx.org/licenses/MIT.html#licenseText"
+                ],
+                "spdx": {
+                  "osi": true,
+                  "fsf": true,
+                  "fsfAndOsi": true,
+                  "includesDeprecated": false
+                },
+                "from": "package.json"
+              },
+              {
+                "uniqueLicenseIds": [
+                  "MIT"
+                ],
+                "spdxLicenseLinks": [
+                  "https://spdx.org/licenses/MIT.html#licenseText"
+                ],
+                "spdx": {
+                  "osi": true,
+                  "fsf": true,
+                  "fsfAndOsi": true,
+                  "includesDeprecated": false
+                },
+                "from": "license"
+              }
+            ]
+          },
+          "gitUrl": null
+        }
+      },
+      "vulnerabilities": [],
+      "metadata": {
+        "dependencyCount": 0,
+        "publishedCount": 17,
+        "lastUpdateAt": "2021-09-10T20:25:05.514Z",
+        "lastVersion": "6.0.1",
+        "hasManyPublishers": true,
+        "hasReceivedUpdateInOneYear": false,
+        "homepage": "https://github.com/chalk/ansi-regex#readme",
+        "author": {
+          "name": "Sindre Sorhus",
+          "email": "sindresorhus@gmail.com",
+          "url": "https://sindresorhus.com"
+        },
+        "publishers": [
+          {
+            "name": "qix",
+            "email": "josh@junon.me",
+            "version": "3.0.1",
+            "at": "2022-03-27T13:29:44.595Z"
+          },
+          {
+            "name": "sindresorhus",
+            "email": "sindresorhus@gmail.com",
+            "version": "6.0.0",
+            "at": "2021-04-16T06:02:15.282Z"
+          },
+          {
+            "name": "jbnicolai",
+            "email": "jappelman@xebia.com",
+            "version": "1.1.1",
+            "at": "2015-02-22T09:24:51.185Z"
+          }
+        ],
+        "maintainers": [
+          {
+            "name": "sindresorhus",
+            "email": "sindresorhus@gmail.com",
+            "at": "2021-04-16T06:02:15.282Z",
+            "version": "6.0.0"
+          },
+          {
+            "name": "qix",
+            "email": "josh@junon.me",
+            "at": "2022-03-27T13:29:44.595Z",
+            "version": "3.0.1"
+          }
+        ]
+      }
+    },
+    "strip-ansi": {
+      "versions": {
+        "7.1.0": {
+          "id": 7,
+          "usedBy": {
+            "@topcli/prompts": "1.5.1"
+          },
+          "isDevDependency": false,
+          "existOnRemoteRegistry": true,
+          "flags": [
+            "hasDependencies",
+            "hasManyPublishers"
+          ],
+          "description": "Strip ANSI escape codes from a string",
+          "size": 4545,
+          "author": {
+            "name": "Sindre Sorhus",
+            "email": "sindresorhus@gmail.com",
+            "url": "https://sindresorhus.com"
+          },
+          "engines": {
+            "node": ">=12"
+          },
+          "repository": "chalk/strip-ansi",
+          "scripts": {
+            "test": "xo && ava && tsd"
+          },
+          "warnings": [],
+          "composition": {
+            "extensions": [
+              "",
+              ".js",
+              ".md",
+              ".json",
+              ".ts"
+            ],
+            "files": [
+              "index.d.ts",
+              "index.js",
+              "license",
+              "package.json",
+              "readme.md"
+            ],
+            "minified": [],
+            "unused": [],
+            "missing": [],
+            "alias": {},
+            "required_files": [],
+            "required_nodejs": [],
+            "required_thirdparty": [
+              "ansi-regex"
+            ],
+            "required_subpath": {}
+          },
+          "license": {
+            "uniqueLicenseIds": [
+              "MIT"
+            ],
+            "hasMultipleLicenses": false,
+            "licenses": [
+              {
+                "uniqueLicenseIds": [
+                  "MIT"
+                ],
+                "spdxLicenseLinks": [
+                  "https://spdx.org/licenses/MIT.html#licenseText"
+                ],
+                "spdx": {
+                  "osi": true,
+                  "fsf": true,
+                  "fsfAndOsi": true,
+                  "includesDeprecated": false
+                },
+                "from": "package.json"
+              },
+              {
+                "uniqueLicenseIds": [
+                  "MIT"
+                ],
+                "spdxLicenseLinks": [
+                  "https://spdx.org/licenses/MIT.html#licenseText"
+                ],
+                "spdx": {
+                  "osi": true,
+                  "fsf": true,
+                  "fsfAndOsi": true,
+                  "includesDeprecated": false
+                },
+                "from": "license"
+              }
+            ]
+          },
+          "gitUrl": null
+        }
+      },
+      "vulnerabilities": [],
+      "metadata": {
+        "dependencyCount": 1,
+        "publishedCount": 20,
+        "lastUpdateAt": "2023-05-28T09:55:04.358Z",
+        "lastVersion": "7.1.0",
+        "hasManyPublishers": true,
+        "hasReceivedUpdateInOneYear": true,
+        "homepage": "https://github.com/chalk/strip-ansi#readme",
+        "author": {
+          "name": "Sindre Sorhus",
+          "email": "sindresorhus@gmail.com",
+          "url": "https://sindresorhus.com"
+        },
+        "publishers": [
+          {
+            "name": "sindresorhus",
+            "email": "sindresorhus@gmail.com",
+            "version": "7.1.0",
+            "at": "2023-05-28T09:55:04.358Z"
+          },
+          {
+            "name": "jbnicolai",
+            "email": "jappelman@xebia.com",
+            "version": "3.0.1",
+            "at": "2016-02-21T12:21:22.998Z"
+          }
+        ],
+        "maintainers": [
+          {
+            "name": "sindresorhus",
+            "email": "sindresorhus@gmail.com",
+            "at": "2023-05-28T09:55:04.358Z",
+            "version": "7.1.0"
+          },
+          {
+            "name": "qix",
+            "email": "josh@junon.me"
+          }
+        ]
+      }
+    },
+    "@topcli/prompts": {
+      "versions": {
+        "1.5.1": {
+          "id": 0,
+          "usedBy": {},
+          "isDevDependency": false,
+          "existOnRemoteRegistry": true,
+          "flags": [
+            "hasDependencies",
+            "hasIndirectDependencies",
+            "hasManyPublishers"
+          ],
+          "description": "Node.js user input library for command-line interfaces.",
+          "size": 36530,
+          "author": {
+            "name": "PierreDemailly",
+            "email": "pierredemailly.pro@gmail.com"
+          },
+          "engines": {
+            "node": ">=14"
+          },
+          "repository": {},
+          "scripts": {
+            "test": "node --no-warnings=ExperimentalWarning --loader=esmock --test test/",
+            "coverage": "c8 -r html npm run test",
+            "lint": "eslint .",
+            "lint:fix": "eslint . --fix"
+          },
+          "warnings": [],
+          "composition": {
+            "extensions": [
+              "",
+              ".js",
+              ".md",
+              ".json",
+              ".ts"
+            ],
+            "files": [
+              "LICENSE",
+              "README.md",
+              "index.d.ts",
+              "index.js",
+              "package.json",
+              "src/abstract-prompt.js",
+              "src/confirm-prompt.js",
+              "src/constants.js",
+              "src/multiselect-prompt.js",
+              "src/prompt-agent.js",
+              "src/question-prompt.js",
+              "src/select-prompt.js",
+              "src/validators.js"
+            ],
+            "minified": [],
+            "unused": [],
+            "missing": [],
+            "alias": {},
+            "required_files": [
+              "src/confirm-prompt.js",
+              "src/select-prompt.js",
+              "src/question-prompt.js",
+              "src/validators.js",
+              "src/prompt-agent.js",
+              "src/multiselect-prompt.js",
+              "src/abstract-prompt.js",
+              "src/constants.js"
+            ],
+            "required_nodejs": [
+              "node:os",
+              "node:readline",
+              "node:stream"
+            ],
+            "required_thirdparty": [
+              "strip-ansi",
+              "kleur",
+              "@topcli/wcwidth",
+              "is-unicode-supported",
+              "is-ci"
+            ],
+            "required_subpath": {}
+          },
+          "license": {
+            "uniqueLicenseIds": [
+              "ISC"
+            ],
+            "hasMultipleLicenses": false,
+            "licenses": [
+              {
+                "uniqueLicenseIds": [
+                  "ISC"
+                ],
+                "spdxLicenseLinks": [
+                  "https://spdx.org/licenses/ISC.html#licenseText"
+                ],
+                "spdx": {
+                  "osi": true,
+                  "fsf": true,
+                  "fsfAndOsi": true,
+                  "includesDeprecated": false
+                },
+                "from": "package.json"
+              }
+            ]
+          },
+          "gitUrl": null
+        }
+      },
+      "vulnerabilities": [],
+      "metadata": {
+        "dependencyCount": 5,
+        "publishedCount": 14,
+        "lastUpdateAt": "2023-11-19T21:15:26.989Z",
+        "lastVersion": "1.5.1",
+        "hasManyPublishers": true,
+        "hasReceivedUpdateInOneYear": true,
+        "homepage": "https://github.com/TopCli/prompts#readme",
+        "author": {
+          "name": "PierreDemailly",
+          "email": "pierredemailly.pro@gmail.com"
+        },
+        "publishers": [
+          {
+            "name": "pierred",
+            "email": "pierredemailly.pro@gmail.com",
+            "version": "1.5.1",
+            "at": "2023-11-19T21:15:26.989Z"
+          }
+        ],
+        "maintainers": [
+          {
+            "name": "pierred",
+            "email": "pierredemailly.pro@gmail.com",
+            "at": "2023-11-19T21:15:26.989Z",
+            "version": "1.5.1"
+          },
+          {
+            "name": "fraxken",
+            "email": "gentilhomme.thomas@gmail.com"
+          }
+        ]
+      }
+    }
+  }
+}
