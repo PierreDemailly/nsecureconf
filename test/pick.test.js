@@ -3,6 +3,7 @@ import assert from "node:assert";
 import { before, after, describe, it } from "node:test";
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 // Import Third-party Dependencies
 import { PromptAgent } from "@topcli/prompts";
@@ -21,7 +22,7 @@ describe("Picking config", () => {
       fs.mkdirSync(CONFIGS_PATH);
     }
 
-    const __dirname = path.dirname(new URL(import.meta.url).pathname);
+    const __dirname = path.dirname(fileURLToPath(import.meta.url));
     fs.copyFileSync(path.join(__dirname, `../src/configs/sharp-result.json`), path.join(CONFIGS_PATH, "sharp-result.json"));
   });
 

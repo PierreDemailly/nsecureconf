@@ -3,6 +3,7 @@
 // Import Node.js Dependencies
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
 // Import Third-party Dependencies
 import meow from "meow";
@@ -23,7 +24,7 @@ if (!fs.existsSync(CONFIGS_PATH)) {
 
   const defaultConfigs = ["angular", "express", "prompts", "sharp"];
   for (const conf of defaultConfigs) {
-    const __dirname = path.dirname(new URL(import.meta.url).pathname);
+    const __dirname = path.dirname(fileURLToPath(import.meta.url));
     fs.copyFileSync(path.join(__dirname, `../src/configs/${conf}-result.json`), path.join(CONFIGS_PATH, `${conf}.json`));
   }
 }

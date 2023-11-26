@@ -1,6 +1,6 @@
 {
   "name": "nsecureconf",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Manage NodeSecure configs",
   "scripts": {
     "test": "node --test --test-concurrency 1",

@@ -4,6 +4,7 @@ import { describe, before, it } from "node:test";
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
+import { fileURLToPath } from "node:url";
 
 // Import Third-party Dependencies
 import { PromptAgent } from "@topcli/prompts";
@@ -47,7 +48,7 @@ describe("Listing configs", () => {
 
     const defaultConfigs = ["angular", "express", "prompts", "sharp"];
     for (const conf of defaultConfigs) {
-      const __dirname = path.dirname(new URL(import.meta.url).pathname);
+      const __dirname = path.dirname(fileURLToPath(import.meta.url));
       fs.copyFileSync(path.join(__dirname, `../src/configs/${conf}-result.json`), path.join(CONFIGS_PATH, `${conf}.json`));
     }
     await list();
